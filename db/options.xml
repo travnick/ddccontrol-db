@@ -3,33 +3,33 @@
 <options date="20061014" dbversion="3">
 	<group name="Color settings">
 		<subgroup name="Brightness and Contrast" pattern="brightnesscontrast">
-			<control id="brightness" type="value" name="Brightness" address="0x10"/>
-			<control id="contrast" type="value" name="Contrast" address="0x12"/>
+			<control id="brightness" type="value" name="Brightness" address="0x10" />
+			<control id="contrast" type="value" name="Contrast" address="0x12" />
 			<!--- vendor specific controls -->
 			<control id="magicbright" type="list" name="Magic Bright Mode" address="0xDC">
-				<value id="text" name="Text"/>
-				<value id="internet" name="Internet"/>
-				<value id="game" name="Game"/>
-				<value id="sport" name="Sport"/>
-				<value id="entertain" name="Entertain"/>
-				<value id="custom" name="Custom"/>
-				<value id="dynamic" name="Dynamic Contrast" /> 
-				<value id="multimedia" name="Multimedia"/>
-				<value id="movie" name="Movie"/>
-				<value id="standard" name="Standard"/>
+				<value id="text" name="Text" />
+				<value id="internet" name="Internet" />
+				<value id="game" name="Game" />
+				<value id="sport" name="Sport" />
+				<value id="entertain" name="Entertain" />
+				<value id="custom" name="Custom" />
+				<value id="dynamic" name="Dynamic Contrast" />
+				<value id="multimedia" name="Multimedia" />
+				<value id="movie" name="Movie" />
+				<value id="standard" name="Standard" />
 			</control>
 			<control id="superbright" type="list" name="Super Bright Mode" address="0xF9">
-				<value id="one" name="One" value="0"/>
-				<value id="two" name="Two" value="1"/>
-				<value id="three" name="Three" value="2"/>
+				<value id="one" name="One" value="0" />
+				<value id="two" name="Two" value="1" />
+				<value id="three" name="Three" value="2" />
 			</control>
-			<control id="autolevel" type="command" name="Auto Level (Needs a blank line to work)"/>
-			<control id="backlight" type="value" name="Backlight" address="0x13"/>
+			<control id="autolevel" type="command" name="Auto Level (Needs a blank line to work)" />
+			<control id="backlight" type="value" name="Backlight" address="0x13" />
 			<control id="ecomode" type="list" name="ECO Mode" address="0xDC">
-				<value id="high" name="High"/>
-				<value id="middle" name="Middle"/>
-				<value id="low" name="Low"/>
-				<value id="auto" name="Auto"/>
+				<value id="high" name="High" />
+				<value id="middle" name="Middle" />
+				<value id="low" name="Low" />
+				<value id="auto" name="Auto" />
 			</control>
 			<control id="fengine" type="list" name="f-Engine">
 				<value id="normal" name="Normal" />
@@ -38,235 +38,244 @@
 				<value id="movie" name="Movie" />
 			</control>
 		</subgroup>
-<!-- Following sub group valid for LG F-Engine monitors -->
+		<!-- Following sub group valid for LG F-Engine monitors -->
 		<subgroup name="LG F-Engine">
 			<control id="femode" type="list" name="F-Engine Mode" address="0xFC">
-                                <value id="movie" name="Movie" value="0x01"/>
-                                <value id="text" name="Text" value="0x02"/>
-                                <value id="normal" name="Normal" value="0x00"/>
-                                <value id="user" name="User defined" value="0x03"/>
-                        </control>
-                        <control id="febrightness" type="value" name="F-Engine Brightness (User defined mode only)" address="0xF1"/>
-                        <control id="feclarity" type="list" name="F-Engine ACE Clarity Mode (User defined mode only)" address="0xF2">
-                                <value id="dark" name="Dark" value="0x01"/>
-                                <value id="normal" name="Normal" value="0x00"/>
-                                <value id="light" name="Light" value="0x02"/>
-                        </control>
-                        <control id="fecolor" type="list" name="F-Engine RCM Color Mode (User defined mode only)" address="0xF3">
-                                <value id="grey" name="Grey" value="0x00"/>
-                                <value id="green" name="Green" value="0x01"/>
-                                <value id="red" name="Red" value="0x02"/>
-                                <value id="colorful" name="Colorful" value="0x03"/>
-                        </control>
+				<value id="movie" name="Movie" value="0x01" />
+				<value id="text" name="Text" value="0x02" />
+				<value id="normal" name="Normal" value="0x00" />
+				<value id="user" name="User defined" value="0x03" />
+			</control>
+			<control id="febrightness" type="value" name="F-Engine Brightness (User defined mode only)" address="0xF1" />
+			<control id="feclarity" type="list" name="F-Engine ACE Clarity Mode (User defined mode only)" address="0xF2">
+				<value id="dark" name="Dark" value="0x01" />
+				<value id="normal" name="Normal" value="0x00" />
+				<value id="light" name="Light" value="0x02" />
+			</control>
+			<control id="fecolor" type="list" name="F-Engine RCM Color Mode (User defined mode only)" address="0xF3">
+				<value id="grey" name="Grey" value="0x00" />
+				<value id="green" name="Green" value="0x01" />
+				<value id="red" name="Red" value="0x02" />
+				<value id="colorful" name="Colorful" value="0x03" />
+			</control>
 		</subgroup>
-		<subgroup name="Gamma" > 
-			<control id="gamma" type="list" name="Gamma" address="0xF2" >
-				<value id="-0.5" name="-0.5"/>
-				<value id="-0.3" name="-0.3"/>
-				<value id="-0.2" name="-0.2"/>
-				<value id="-0.1" name="-0.1"/>
-				<value id="0" name="0"/>
-				<value id="+0.1" name="+0.1"/>
-				<value id="+0.2" name="+0.2"/>
-				<value id="+0.3" name="+0.3"/>
-				<value id="+0.4" name="+0.4"/>
-				<value id="+0.5" name="+0.5"/>
-				<value id="+0.6" name="+0.6"/>
-				<value id="+0.7" name="+0.7"/>
-				<value id="+0.9" name="+0.9"/>
-				<value id="1.8" name="1.8"/>
-				<value id="2.0" name="2.0"/>
-				<value id="2.2" name="2.2"/>
-				<value id="2.4" name="2.4"/>
-				<value id="2.6" name="2.6"/>
+		<subgroup name="Gamma">
+			<control id="gamma" type="list" name="Gamma" address="0xF2">
+				<value id="-0.5" name="-0.5" />
+				<value id="-0.3" name="-0.3" />
+				<value id="-0.2" name="-0.2" />
+				<value id="-0.1" name="-0.1" />
+				<value id="0" name="0" />
+				<value id="+0.1" name="+0.1" />
+				<value id="+0.2" name="+0.2" />
+				<value id="+0.3" name="+0.3" />
+				<value id="+0.4" name="+0.4" />
+				<value id="+0.5" name="+0.5" />
+				<value id="+0.6" name="+0.6" />
+				<value id="+0.7" name="+0.7" />
+				<value id="+0.9" name="+0.9" />
+				<value id="1.8" name="1.8" />
+				<value id="2.0" name="2.0" />
+				<value id="2.2" name="2.2" />
+				<value id="2.4" name="2.4" />
+				<value id="2.6" name="2.6" />
 			</control>
 		</subgroup>
 		<subgroup name="Color maximum level">
-			<control id="red" type="value" name="Red maximum level" address="0x16"/>
-			<control id="green" type="value" name="Green maximum level" address="0x18"/>
-			<control id="blue" type="value" name="Blue maximum level" address="0x1A"/>
+			<control id="red" type="value" name="Red maximum level" address="0x16" />
+			<control id="green" type="value" name="Green maximum level" address="0x18" />
+			<control id="blue" type="value" name="Blue maximum level" address="0x1A" />
 		</subgroup>
 		<subgroup name="Color minimum level">
-			<control id="redblack" type="value" name="Red minimum level" address="0x6C"/>
-			<control id="greenblack" type="value" name="Green minimum level" address="0x6E"/>
-			<control id="blueblack" type="value" name="Blue minimum level" address="0x70"/>
+			<control id="redblack" type="value" name="Red minimum level" address="0x6C" />
+			<control id="greenblack" type="value" name="Green minimum level" address="0x6E" />
+			<control id="blueblack" type="value" name="Blue minimum level" address="0x70" />
 		</subgroup>
 		<subgroup name="Various color settings">
-			<control id="hue" type="value" name="Hue" address="0x1C"/>
-			<control id="saturation" type="value" name="Saturation" address="0x50"/>
-			<control id="colorcurve" type="value" name="Color curve adjust" address="0x52"/>
+			<control id="hue" type="value" name="Hue" address="0x1C" />
+			<control id="saturation" type="value" name="Saturation" address="0x50" />
+			<control id="colorcurve" type="value" name="Color curve adjust" address="0x52" />
 			<control id="colorpreset" type="list" name="Color Preset" address="0x14">
 				<!-- SAM00BA@0xe0 -->
-				<value id="normal" name="Normal"/>
-				<value id="custom" name="Custom"/>
-				<value id="warm" name="Warm"/>
-				<value id="cool" name="Cool"/>
-				<value id="warm1" name="Warm1"/>
-				<value id="warm2" name="Warm2"/>
-				<value id="cool1" name="Cool1"/>
-				<value id="cool2" name="Cool2"/>
-				<value id="cool3" name="Cool3"/>
-				<value id="cool4" name="Cool4"/>
-				<value id="cool5" name="Cool5"/>
-				<value id="cool6" name="Cool6"/>
-				<value id="cool7" name="Cool7"/>
-				<value id="srgb" name="sRGB"/>
-				<value id="argb" name="Adobe RGB"/>
-				<value id="4000k" name="4000K"/>
-				<value id="5000k" name="5000K"/>
-				<value id="6500k" name="6500K"/>
-				<value id="7500k" name="7500K"/>
-				<value id="8200k" name="8200K"/>
-				<value id="9300k" name="9300K"/>
-				<value id="10000k" name="10000K"/>
-				<value id="11500k" name="11500K"/>
-				<value id="native" name="Native"/>
-				<value id="user" name="User"/>
-				<value id="user1" name="User 1"/>
-				<value id="user2" name="User 2"/>
-				<value id="user3" name="User 3"/>
-				<value id="user4" name="User 4"/>
-				<value id="easy" name="Easy"/>
-				<value id="expert" name="Expert"/>
+				<value id="normal" name="Normal" />
+				<value id="custom" name="Custom" />
+				<value id="warm" name="Warm" />
+				<value id="cool" name="Cool" />
+				<value id="warm1" name="Warm1" />
+				<value id="warm2" name="Warm2" />
+				<value id="cool1" name="Cool1" />
+				<value id="cool2" name="Cool2" />
+				<value id="cool3" name="Cool3" />
+				<value id="cool4" name="Cool4" />
+				<value id="cool5" name="Cool5" />
+				<value id="cool6" name="Cool6" />
+				<value id="cool7" name="Cool7" />
+				<value id="srgb" name="sRGB" />
+				<value id="argb" name="Adobe RGB" />
+				<value id="4000k" name="4000K" />
+				<value id="5000k" name="5000K" />
+				<value id="5700k" name="5700K" />
+				<value id="6500k" name="6500K" />
+				<value id="7500k" name="7500K" />
+				<value id="8200k" name="8200K" />
+				<value id="9300k" name="9300K" />
+				<value id="10000k" name="10000K" />
+				<value id="11500k" name="11500K" />
+				<value id="native" name="Native" />
+				<value id="user" name="User" />
+				<value id="user1" name="User 1" />
+				<value id="user2" name="User 2" />
+				<value id="user3" name="User 3" />
+				<value id="user4" name="User 4" />
+				<value id="easy" name="Easy" />
+				<value id="expert" name="Expert" />
+				<!-- BNQ7F1C -->
+				<value id="movie" name="Movie" />
+				<value id="photo" name="Photo" />
+				<value id="eco" name="Eco" />
+				<value id="rts1" name="RTS1" />
+				<value id="rts2" name="RTS2" />
 			</control>
 			<control id="magiccolor" type="list" name="MagicColor" address="0xF0">
-				<value id="off" name="Off"/>
-				<value id="demo" name="Demo"/>
-				<value id="full" name="Full"/>
-				<value id="intelligent" name="Intelligent"/>
+				<value id="off" name="Off" />
+				<value id="demo" name="Demo" />
+				<value id="full" name="Full" />
+				<value id="intelligent" name="Intelligent" />
 			</control>
-			<control id="colortemp" type="value" name="Color temperature" address="0x54"/>
-			<control id="colorreturn" type="value" name="Color Return"/>
+			<control id="colortemp" type="value" name="Color temperature" address="0x54" />
+			<control id="colorreturn" type="value" name="Color Return" />
 		</subgroup>
 	</group>
 	<group name="Position and size">
 		<subgroup name="Position">
-			<control id="hpos" type="value" name="Horizontal Position" address="0x20"/>
-			<control id="vpos" type="value" name="Vertical Position" address="0x30"/>
+			<control id="hpos" type="value" name="Horizontal Position" address="0x20" />
+			<control id="vpos" type="value" name="Vertical Position" address="0x30" />
 		</subgroup>
-		<subgroup name="Size">a
-			<control id="hsize" type="value" name="Horizontal Size" address="0x22"/>
-			<control id="vsize" type="value" name="Vertical Size" address="0x32"/>
+		<subgroup name="Size">
+			<control id="hsize" type="value" name="Horizontal Size" address="0x22" />
+			<control id="vsize" type="value" name="Vertical Size" address="0x32" />
 		</subgroup>
 		<subgroup name="Automatic adjustments">
 			<control id="autosize" type="list" name="Auto Size Center" address="0x5A">
-				<value id="enable" name="Enable" value="0x00"/>
-				<value id="disable" name="Disable" value="0x01"/>
+				<value id="enable" name="Enable" value="0x00" />
+				<value id="disable" name="Disable" value="0x01" />
 			</control>
 			<control id="auto" type="command" name="Automatically adjust" address="0x1e">
-				<value id="pos" name="H/V Position"/>
-				<value id="coarsefine" name="Clock and clock phase"/>
-				<value id="posfast" name="H/V Position (fast mode)"/>
+				<value id="pos" name="H/V Position" />
+				<value id="coarsefine" name="Clock and clock phase" />
+				<value id="posfast" name="H/V Position (fast mode)" />
 			</control>
 		</subgroup>
 	</group>
 	<group name="Geometry">
 		<subgroup name="Pincushion">
-			<control id="hpincushion" type="value" name="Horizontal Pincushion" address="0x24"/>
-			<control id="hpincushionbalance" type="value" name="Horizontal Pincushion Balance" address="0x26"/>
-			<control id="vpincushion" type="value" name="Vertical Pincushion" address="0x34"/>
-			<control id="vpincushionbalance" type="value" name="Vertical Pincushion Balance" address="0x36"/>     
-			<control id="cpincushion" type="value" name="Center Pincushion" address="0xE1"/>
+			<control id="hpincushion" type="value" name="Horizontal Pincushion" address="0x24" />
+			<control id="hpincushionbalance" type="value" name="Horizontal Pincushion Balance" address="0x26" />
+			<control id="vpincushion" type="value" name="Vertical Pincushion" address="0x34" />
+			<control id="vpincushionbalance" type="value" name="Vertical Pincushion Balance" address="0x36" />
+			<control id="cpincushion" type="value" name="Center Pincushion" address="0xE1" />
 		</subgroup>
 		<subgroup name="Linearity">
-			<control id="hlinearity" type="value" name="Horizontal Linearity" address="0x2A"/>
-			<control id="hlinearitybalance" type="value" name="Horizontal Linearity Balance" address="0x2C"/>
-			<control id="vlinearity" type="value" name="Vertical Linearity" address="0x3A"/>
-			<control id="vlinearitybalance" type="value" name="Vertical Linearity Balance" address="0x3C"/>
+			<control id="hlinearity" type="value" name="Horizontal Linearity" address="0x2A" />
+			<control id="hlinearitybalance" type="value" name="Horizontal Linearity Balance" address="0x2C" />
+			<control id="vlinearity" type="value" name="Vertical Linearity" address="0x3A" />
+			<control id="vlinearitybalance" type="value" name="Vertical Linearity Balance" address="0x3C" />
 		</subgroup>
 		<subgroup name="Misconvergence" pattern="misconvergence">
-			<control id="hmisconvergence" type="value" name="Horizontal Misconvergence" address="0x28"/>
-			<control id="vmisconvergence" type="value" name="Vertical Misconvergence" address="0x38"/>
-			<control id="vtopmisconvergence" type="value" name="Vertical Top Misconvergence"/>
-			<control id="vbottommisconvergence" type="value" name="Vertical Bottom Misconvergence"/>
+			<control id="hmisconvergence" type="value" name="Horizontal Misconvergence" address="0x28" />
+			<control id="vmisconvergence" type="value" name="Vertical Misconvergence" address="0x38" />
+			<control id="vtopmisconvergence" type="value" name="Vertical Top Misconvergence" />
+			<control id="vbottommisconvergence" type="value" name="Vertical Bottom Misconvergence" />
 		</subgroup>
 		<subgroup name="General distortion">
-			<control id="keybalance" type="value" name="Parallelogram Distortion (Key Balance)" address="0x40"/>
-			<control id="key" type="value" name="Trapezoidal Distortion (Key)" address="0x42"/>
+			<control id="keybalance" type="value" name="Parallelogram Distortion (Key Balance)" address="0x40" />
+			<control id="key" type="value" name="Trapezoidal Distortion (Key)" address="0x42" />
 		</subgroup>
 		<subgroup name="Corners distortion">
-			<control id="tdistortionctrl" type="value" name="Top Corner Distortion Control" address="0x46"/>
-			<control id="tdistortionbalance" type="value" name="Top Corner Distortion Balance" address="0x48"/>
-			<control id="bdistortionctrl" type="value" name="Bottom Corner Distortion Control" address="0x4A"/>
-			<control id="bdistortionbalance" type="value" name="Bottom Corner Distortion Balance" address="0x4C"/>
+			<control id="tdistortionctrl" type="value" name="Top Corner Distortion Control" address="0x46" />
+			<control id="tdistortionbalance" type="value" name="Top Corner Distortion Balance" address="0x48" />
+			<control id="bdistortionctrl" type="value" name="Bottom Corner Distortion Control" address="0x4A" />
+			<control id="bdistortionbalance" type="value" name="Bottom Corner Distortion Balance" address="0x4C" />
 		</subgroup>
 		<subgroup name="Rotation">
-			<control id="tilt" type="value" name="Rotation (Tilt)" address="0x44"/>
+			<control id="tilt" type="value" name="Rotation (Tilt)" address="0x44" />
 		</subgroup>
 	</group>
 	<group name="Screen purity">
 		<subgroup name="Moire" pattern="moire">
-			<control id="hmoire" type="value" name="Horizontal Moire" address="0x54"/>
-			<control id="vmoire" type="value" name="Vertical Moire" address="0x56"/>
+			<control id="hmoire" type="value" name="Horizontal Moire" address="0x54" />
+			<control id="vmoire" type="value" name="Vertical Moire" address="0x56" />
 		</subgroup>
 		<subgroup name="Image setup" pattern="clock">
-			<control id="focus" type="value" name="Focus" address="0x1c"/>
-			<control id="coarse" type="value" name="Image Lock Coarse (Clock)" address="0x0e"/>
-			<control id="fine" type="value" name="Image Lock Fine (Clock Phase)" address="0x3e"/>
+			<control id="focus" type="value" name="Focus" address="0x1c" />
+			<control id="coarse" type="value" name="Image Lock Coarse (Clock)" address="0x0e" />
+			<control id="fine" type="value" name="Image Lock Fine (Clock Phase)" address="0x3e" />
 		</subgroup>
 		<subgroup name="Corners purity">
 			<!--- vendor specific controls -->
-			<control id="tlpurity" type="value" name="Top left screen purity" address="0xE8"/>
-			<control id="trpurity" type="value" name="Top right screen purity" address="0xE9"/>
-			<control id="blpurity" type="value" name="Bottom left screen purity" address="0xEA"/>
-			<control id="brpurity" type="value" name="Bottom right screen purity" address="0xEB"/>
+			<control id="tlpurity" type="value" name="Top left screen purity" address="0xE8" />
+			<control id="trpurity" type="value" name="Top right screen purity" address="0xE9" />
+			<control id="blpurity" type="value" name="Bottom left screen purity" address="0xEA" />
+			<control id="brpurity" type="value" name="Bottom right screen purity" address="0xEB" />
 		</subgroup>
 		<subgroup name="Various">
-			<control id="landing" type="value" name="Landing Adjust (RGB alignment)" address="0x5C"/>
-			<control id="sharpness" type="value" name="Sharpness" address="0x8c"/>
+			<control id="landing" type="value" name="Landing Adjust (RGB alignment)" address="0x5C" />
+			<control id="sharpness" type="value" name="Sharpness" address="0x8c" />
 		</subgroup>
 	</group>
 	<group name="Others">
 		<subgroup name="Restore defaults">
-			<control id="defaults" type="command" name="Restore Factory Defaults" address="0x04" refresh="all"/>
-			<control id="defaultluma" type="command" name="Restore Brightness and Contrast" address="0x05" refresh="all"/>
-			<control id="defaultgeom" type="command" name="Restore Factory Default Geometry" address="0x06" refresh="all"/>
-			<control id="defaultcolor" type="command" name="Restore Factory Default Color" address="0x08" refresh="all"/>
-			<control id="defaultposition" type="command" name="Restore Factory Default Position" address="0x0A" refresh="all"/>
-			<control id="defaultsize" type="command" name="Restore Factory Default Size" address="0x0C" refresh="all"/>
-			<control id="defaultsizepos" type="command" name="Restore Factory Default Size and Position" address="0x0C" refresh="all"/>
+			<control id="defaults" type="command" name="Restore Factory Defaults" address="0x04" refresh="all" />
+			<control id="defaultluma" type="command" name="Restore Brightness and Contrast" address="0x05" refresh="all" />
+			<control id="defaultgeom" type="command" name="Restore Factory Default Geometry" address="0x06" refresh="all" />
+			<control id="defaultcolor" type="command" name="Restore Factory Default Color" address="0x08" refresh="all" />
+			<control id="defaultposition" type="command" name="Restore Factory Default Position" address="0x0A" refresh="all" />
+			<control id="defaultsize" type="command" name="Restore Factory Default Size" address="0x0C" refresh="all" />
+			<control id="defaultsizepos" type="command" name="Restore Factory Default Size and Position" address="0x0C" refresh="all" />
 			<control id="settings" type="command" name="Settings" address="0xb0" refresh="all">
-				<value id="store" value="1" name="Save Current Settings"/>
-				<value id="restorefactory" value="2" name="Restore Factory Settings"/>
+				<value id="store" value="1" name="Save Current Settings" />
+				<value id="restorefactory" value="2" name="Restore Factory Settings" />
 			</control>
 		</subgroup>
 		<subgroup name="Audio">
-			<control id="audiospeakervolume" type="value" name="Audio Speaker Volume Adjust" address="0x62"/>
-			<control id="audiomicrovolume" type="value" name="Audio Microphone Volume Adjust" address="0x64"/>
+			<control id="audiospeakervolume" type="value" name="Audio Speaker Volume Adjust" address="0x62" />
+			<control id="audiomicrovolume" type="value" name="Audio Microphone Volume Adjust" address="0x64" />
 			<control id="mute" type="list" name="Mute" address="0x94">
-				<value id="mute" name="Mute"/>
-				<value id="normal" name="Normal"/>
+				<value id="mute" name="Mute" />
+				<value id="normal" name="Normal" />
 			</control>
 		</subgroup>
 		<subgroup name="Degauss">
-			<control id="degauss" type="command" name="Degauss" address="0x00"/>
-			<control id="secdegauss" type="command" name="Secondary Degauss" address="0x02"/>
+			<control id="degauss" type="command" name="Degauss" address="0x00" />
+			<control id="secdegauss" type="command" name="Secondary Degauss" address="0x02" />
 		</subgroup>
 		<subgroup name="OSD">
-			<control id="osd" type="list" name="On Screen Display" address="0x66"> <!--- USB specifies address 0xCA -->
-				<value id="disable" name="Disable"/>
-				<value id="enable" name="Enable"/>
-				<value id="partenable" name="Enable only brightness/contrast settings"/>
+			<control id="osd" type="list" name="On Screen Display" address="0x66">
+				<!--- USB specifies address 0xCA -->
+				<value id="disable" name="Disable" />
+				<value id="enable" name="Enable" />
+				<value id="partenable" name="Enable only brightness/contrast settings" />
 			</control>
-			<control id="osd2" type="list" name="On Screen Display (Samsung)" address="0xf5"> <!--- Samsung has 2 OSD controls -->
-				<value id="disable" name="Disable"/>
-				<value id="enable" name="Enable"/>
+			<control id="osd2" type="list" name="On Screen Display (Samsung)" address="0xf5">
+				<!--- Samsung has 2 OSD controls -->
+				<value id="disable" name="Disable" />
+				<value id="enable" name="Enable" />
 			</control>
 			<control id="osdorientation" type="list" name="OSD Orientation" address="0xaa">
-				<value id="landscape" name="Landscape"/>
-				<value id="portrait" name="Portrait"/>
+				<value id="landscape" name="Landscape" />
+				<value id="portrait" name="Portrait" />
 			</control>
 			<control id="language" type="list" name="Language select" address="0x68">
-				<value id="english" name="English"/>
-				<value id="french"  name="French"/>
-				<value id="german"  name="German"/>
-				<value id="italian" name="Italian"/>
-				<value id="russian" name="Russian"/>
-				<value id="spanish" name="Spanish"/>
-				<value id="swedish" name="Swedish"/>
-				<value id="chinese" name="Chinese"/>
-				<value id="dutch"   name="Dutch"/>
-				<value id="japanese" name="Japanese"/>
+				<value id="english" name="English" />
+				<value id="french" name="French" />
+				<value id="german" name="German" />
+				<value id="italian" name="Italian" />
+				<value id="russian" name="Russian" />
+				<value id="spanish" name="Spanish" />
+				<value id="swedish" name="Swedish" />
+				<value id="chinese" name="Chinese" />
+				<value id="dutch" name="Dutch" />
+				<value id="japanese" name="Japanese" />
 			</control>
 		</subgroup>
 		<subgroup name="Input settings">
@@ -274,344 +283,343 @@
 				<!-- To be completed -->
 			</control>
 			<control id="resolutionnotifier" type="list" name="Display Resolution Notifier" address="0xf6">
-				<value id="on" name="On"/>
-				<value id="off" name="Off"/>
+				<value id="on" name="On" />
+				<value id="off" name="Off" />
 			</control>
 			<control id="inputsource" type="list" name="Input Source Select" address="0x60">
-				<value id="analog" name="Analog"/>
-				<value id="digital" name="Digital"/>
-				<value id="dp" name="DisplayPort"/>
-				<value id="dvi" name="DVI"/>
-				<value id="dvi1" name="DVI-1"/>
-				<value id="dvi2" name="DVI-2"/>
-				<value id="hdmi" name="HDMI"/>
-				<value id="hdmi1" name="HDMI-1"/>
-				<value id="hdmi2" name="HDMI-2"/>
-				<value id="vga" name="VGA"/>
-				<value id="component" name="Component"/>
-				<value id="s-video" name="S-Video"/>
-				<value id="composite" name="Composite"/>
+				<value id="analog" name="Analog" />
+				<value id="digital" name="Digital" />
+				<value id="dp" name="DisplayPort" />
+				<value id="dvi" name="DVI" />
+				<value id="dvi1" name="DVI-1" />
+				<value id="dvi2" name="DVI-2" />
+				<value id="hdmi" name="HDMI" />
+				<value id="hdmi1" name="HDMI-1" />
+				<value id="hdmi2" name="HDMI-2" />
+				<value id="vga" name="VGA" />
+				<value id="component" name="Component" />
+				<value id="s-video" name="S-Video" />
+				<value id="composite" name="Composite" />
 			</control>
 			<control id="autosource" type="list" name="Autoselect Input Source" address="0xe2">
-				<value id="auto" name="Automatic" value="0"/>
-				<value id="manual" name="Manual" value="1"/>
+				<value id="auto" name="Automatic" value="0" />
+				<value id="manual" name="Manual" value="1" />
 			</control>
 		</subgroup>
 		<subgroup name="Power control">
 			<control id="dpms" type="list" name="DPMS Control" address="0xd6">
-				<value id="on" name="On"/>
-				<value id="standby" name="Standby"/>
-				<value id="off" name="Off"/>
+				<value id="on" name="On" />
+				<value id="standby" name="Standby" />
+				<value id="off" name="Off" />
 			</control>
 			<control id="power" type="list" name="Power control" address="0xe1">
-				<value id="off" name="Off"/>
-				<value id="on" name="On"/>
+				<value id="off" name="Off" />
+				<value id="on" name="On" />
 			</control>
 		</subgroup>
 		<subgroup name="Buttons and leds">
 			<!-- button on the left side of the monitor stand can be customised -->
 			<control id="customkey" type="list" name="Custom key" address="0xe8">
-				<value id="magicbright" name="MagicBright"/>
-				<value id="magiccolor" name="MagicColor"/>
-				<value id="autosetup" name="Automatic setup"/>
-				<value id="inputsource" name="Input Source Select"/>
-				<value id="colortone" name="Color Tone"/>
+				<value id="magicbright" name="MagicBright" />
+				<value id="magiccolor" name="MagicColor" />
+				<value id="autosetup" name="Automatic setup" />
+				<value id="inputsource" name="Input Source Select" />
+				<value id="colortone" name="Color Tone" />
 			</control>
-
 			<!-- a switch to enable/disable the power led only (no other functionality,
 				it seems) -->
 			<control id="powerled" type="list" name="Power LED" address="0xfd">
-				<value id="off" name="Off"/>
-				<value id="on" name="On"/>
+				<value id="off" name="Off" />
+				<value id="on" name="On" />
 			</control>
 		</subgroup>
 	</group>
 	<group name="Testing">
 		<subgroup name="0x0X">
-			<control id="testcontrol02" type="value" name="Control 0x02" address="0x02"/>
-			<control id="testcontrol03" type="value" name="Control 0x03" address="0x03"/>
-			<control id="testcontrol04" type="value" name="Control 0x04" address="0x04"/>
-			<control id="testcontrol05" type="value" name="Control 0x05" address="0x05"/>
-			<control id="testcontrol06" type="value" name="Control 0x06" address="0x06"/>
-			<control id="testcontrol07" type="value" name="Control 0x07" address="0x07"/>
-			<control id="testcontrol08" type="value" name="Control 0x08" address="0x08"/>
-			<control id="testcontrol09" type="value" name="Control 0x09" address="0x09"/>
-			<control id="testcontrol0A" type="value" name="Control 0x0A" address="0x0A"/>
-			<control id="testcontrol0B" type="value" name="Control 0x0B" address="0x0B"/>
-			<control id="testcontrol0C" type="value" name="Control 0x0C" address="0x0C"/>
-			<control id="testcontrol0D" type="value" name="Control 0x0D" address="0x0D"/>
-			<control id="testcontrol0E" type="value" name="Control 0x0E" address="0x0E"/>
-			<control id="testcontrol0F" type="value" name="Control 0x0F" address="0x0F"/>
+			<control id="testcontrol02" type="value" name="Control 0x02" address="0x02" />
+			<control id="testcontrol03" type="value" name="Control 0x03" address="0x03" />
+			<control id="testcontrol04" type="value" name="Control 0x04" address="0x04" />
+			<control id="testcontrol05" type="value" name="Control 0x05" address="0x05" />
+			<control id="testcontrol06" type="value" name="Control 0x06" address="0x06" />
+			<control id="testcontrol07" type="value" name="Control 0x07" address="0x07" />
+			<control id="testcontrol08" type="value" name="Control 0x08" address="0x08" />
+			<control id="testcontrol09" type="value" name="Control 0x09" address="0x09" />
+			<control id="testcontrol0A" type="value" name="Control 0x0A" address="0x0A" />
+			<control id="testcontrol0B" type="value" name="Control 0x0B" address="0x0B" />
+			<control id="testcontrol0C" type="value" name="Control 0x0C" address="0x0C" />
+			<control id="testcontrol0D" type="value" name="Control 0x0D" address="0x0D" />
+			<control id="testcontrol0E" type="value" name="Control 0x0E" address="0x0E" />
+			<control id="testcontrol0F" type="value" name="Control 0x0F" address="0x0F" />
 		</subgroup>
 		<subgroup name="0x1X">
-			<control id="testcontrol10" type="value" name="Control 0x10" address="0x10"/>
-			<control id="testcontrol11" type="value" name="Control 0x11" address="0x11"/>
-			<control id="testcontrol12" type="value" name="Control 0x12" address="0x12"/>
-			<control id="testcontrol13" type="value" name="Control 0x13" address="0x13"/>
-			<control id="testcontrol14" type="value" name="Control 0x14" address="0x14"/>
-			<control id="testcontrol15" type="value" name="Control 0x15" address="0x15"/>
-			<control id="testcontrol16" type="value" name="Control 0x16" address="0x16"/>
-			<control id="testcontrol17" type="value" name="Control 0x17" address="0x17"/>
-			<control id="testcontrol18" type="value" name="Control 0x18" address="0x18"/>
-			<control id="testcontrol19" type="value" name="Control 0x19" address="0x19"/>
-			<control id="testcontrol1A" type="value" name="Control 0x1A" address="0x1A"/>
-			<control id="testcontrol1B" type="value" name="Control 0x1B" address="0x1B"/>
-			<control id="testcontrol1C" type="value" name="Control 0x1C" address="0x1C"/>
-			<control id="testcontrol1D" type="value" name="Control 0x1D" address="0x1D"/>
-			<control id="testcontrol1E" type="value" name="Control 0x1E" address="0x1E"/>
-			<control id="testcontrol1F" type="value" name="Control 0x1F" address="0x1F"/>
+			<control id="testcontrol10" type="value" name="Control 0x10" address="0x10" />
+			<control id="testcontrol11" type="value" name="Control 0x11" address="0x11" />
+			<control id="testcontrol12" type="value" name="Control 0x12" address="0x12" />
+			<control id="testcontrol13" type="value" name="Control 0x13" address="0x13" />
+			<control id="testcontrol14" type="value" name="Control 0x14" address="0x14" />
+			<control id="testcontrol15" type="value" name="Control 0x15" address="0x15" />
+			<control id="testcontrol16" type="value" name="Control 0x16" address="0x16" />
+			<control id="testcontrol17" type="value" name="Control 0x17" address="0x17" />
+			<control id="testcontrol18" type="value" name="Control 0x18" address="0x18" />
+			<control id="testcontrol19" type="value" name="Control 0x19" address="0x19" />
+			<control id="testcontrol1A" type="value" name="Control 0x1A" address="0x1A" />
+			<control id="testcontrol1B" type="value" name="Control 0x1B" address="0x1B" />
+			<control id="testcontrol1C" type="value" name="Control 0x1C" address="0x1C" />
+			<control id="testcontrol1D" type="value" name="Control 0x1D" address="0x1D" />
+			<control id="testcontrol1E" type="value" name="Control 0x1E" address="0x1E" />
+			<control id="testcontrol1F" type="value" name="Control 0x1F" address="0x1F" />
 		</subgroup>
 		<subgroup name="0x2X">
-			<control id="testcontrol20" type="value" name="Control 0x20" address="0x20"/>
-			<control id="testcontrol21" type="value" name="Control 0x21" address="0x21"/>
-			<control id="testcontrol22" type="value" name="Control 0x22" address="0x22"/>
-			<control id="testcontrol23" type="value" name="Control 0x23" address="0x23"/>
-			<control id="testcontrol24" type="value" name="Control 0x24" address="0x24"/>
-			<control id="testcontrol25" type="value" name="Control 0x25" address="0x25"/>
-			<control id="testcontrol26" type="value" name="Control 0x26" address="0x26"/>
-			<control id="testcontrol27" type="value" name="Control 0x27" address="0x27"/>
-			<control id="testcontrol28" type="value" name="Control 0x28" address="0x28"/>
-			<control id="testcontrol29" type="value" name="Control 0x29" address="0x29"/>
-			<control id="testcontrol2A" type="value" name="Control 0x2A" address="0x2A"/>
-			<control id="testcontrol2B" type="value" name="Control 0x2B" address="0x2B"/>
-			<control id="testcontrol2C" type="value" name="Control 0x2C" address="0x2C"/>
-			<control id="testcontrol2D" type="value" name="Control 0x2D" address="0x2D"/>
-			<control id="testcontrol2E" type="value" name="Control 0x2E" address="0x2E"/>
-			<control id="testcontrol2F" type="value" name="Control 0x2F" address="0x2F"/>
+			<control id="testcontrol20" type="value" name="Control 0x20" address="0x20" />
+			<control id="testcontrol21" type="value" name="Control 0x21" address="0x21" />
+			<control id="testcontrol22" type="value" name="Control 0x22" address="0x22" />
+			<control id="testcontrol23" type="value" name="Control 0x23" address="0x23" />
+			<control id="testcontrol24" type="value" name="Control 0x24" address="0x24" />
+			<control id="testcontrol25" type="value" name="Control 0x25" address="0x25" />
+			<control id="testcontrol26" type="value" name="Control 0x26" address="0x26" />
+			<control id="testcontrol27" type="value" name="Control 0x27" address="0x27" />
+			<control id="testcontrol28" type="value" name="Control 0x28" address="0x28" />
+			<control id="testcontrol29" type="value" name="Control 0x29" address="0x29" />
+			<control id="testcontrol2A" type="value" name="Control 0x2A" address="0x2A" />
+			<control id="testcontrol2B" type="value" name="Control 0x2B" address="0x2B" />
+			<control id="testcontrol2C" type="value" name="Control 0x2C" address="0x2C" />
+			<control id="testcontrol2D" type="value" name="Control 0x2D" address="0x2D" />
+			<control id="testcontrol2E" type="value" name="Control 0x2E" address="0x2E" />
+			<control id="testcontrol2F" type="value" name="Control 0x2F" address="0x2F" />
 		</subgroup>
 		<subgroup name="0x3X">
-			<control id="testcontrol30" type="value" name="Control 0x30" address="0x30"/>
-			<control id="testcontrol31" type="value" name="Control 0x31" address="0x31"/>
-			<control id="testcontrol32" type="value" name="Control 0x32" address="0x32"/>
-			<control id="testcontrol33" type="value" name="Control 0x33" address="0x33"/>
-			<control id="testcontrol34" type="value" name="Control 0x34" address="0x34"/>
-			<control id="testcontrol35" type="value" name="Control 0x35" address="0x35"/>
-			<control id="testcontrol36" type="value" name="Control 0x36" address="0x36"/>
-			<control id="testcontrol37" type="value" name="Control 0x37" address="0x37"/>
-			<control id="testcontrol38" type="value" name="Control 0x38" address="0x38"/>
-			<control id="testcontrol39" type="value" name="Control 0x39" address="0x39"/>
-			<control id="testcontrol3A" type="value" name="Control 0x3A" address="0x3A"/>
-			<control id="testcontrol3B" type="value" name="Control 0x3B" address="0x3B"/>
-			<control id="testcontrol3C" type="value" name="Control 0x3C" address="0x3C"/>
-			<control id="testcontrol3D" type="value" name="Control 0x3D" address="0x3D"/>
-			<control id="testcontrol3E" type="value" name="Control 0x3E" address="0x3E"/>
-			<control id="testcontrol3F" type="value" name="Control 0x3F" address="0x3F"/>
+			<control id="testcontrol30" type="value" name="Control 0x30" address="0x30" />
+			<control id="testcontrol31" type="value" name="Control 0x31" address="0x31" />
+			<control id="testcontrol32" type="value" name="Control 0x32" address="0x32" />
+			<control id="testcontrol33" type="value" name="Control 0x33" address="0x33" />
+			<control id="testcontrol34" type="value" name="Control 0x34" address="0x34" />
+			<control id="testcontrol35" type="value" name="Control 0x35" address="0x35" />
+			<control id="testcontrol36" type="value" name="Control 0x36" address="0x36" />
+			<control id="testcontrol37" type="value" name="Control 0x37" address="0x37" />
+			<control id="testcontrol38" type="value" name="Control 0x38" address="0x38" />
+			<control id="testcontrol39" type="value" name="Control 0x39" address="0x39" />
+			<control id="testcontrol3A" type="value" name="Control 0x3A" address="0x3A" />
+			<control id="testcontrol3B" type="value" name="Control 0x3B" address="0x3B" />
+			<control id="testcontrol3C" type="value" name="Control 0x3C" address="0x3C" />
+			<control id="testcontrol3D" type="value" name="Control 0x3D" address="0x3D" />
+			<control id="testcontrol3E" type="value" name="Control 0x3E" address="0x3E" />
+			<control id="testcontrol3F" type="value" name="Control 0x3F" address="0x3F" />
 		</subgroup>
 		<subgroup name="0x4X">
-			<control id="testcontrol40" type="value" name="Control 0x40" address="0x40"/>
-			<control id="testcontrol41" type="value" name="Control 0x41" address="0x41"/>
-			<control id="testcontrol42" type="value" name="Control 0x42" address="0x42"/>
-			<control id="testcontrol43" type="value" name="Control 0x43" address="0x43"/>
-			<control id="testcontrol44" type="value" name="Control 0x44" address="0x44"/>
-			<control id="testcontrol45" type="value" name="Control 0x45" address="0x45"/>
-			<control id="testcontrol46" type="value" name="Control 0x46" address="0x46"/>
-			<control id="testcontrol47" type="value" name="Control 0x47" address="0x47"/>
-			<control id="testcontrol48" type="value" name="Control 0x48" address="0x48"/>
-			<control id="testcontrol49" type="value" name="Control 0x49" address="0x49"/>
-			<control id="testcontrol4A" type="value" name="Control 0x4A" address="0x4A"/>
-			<control id="testcontrol4B" type="value" name="Control 0x4B" address="0x4B"/>
-			<control id="testcontrol4C" type="value" name="Control 0x4C" address="0x4C"/>
-			<control id="testcontrol4D" type="value" name="Control 0x4D" address="0x4D"/>
-			<control id="testcontrol4E" type="value" name="Control 0x4E" address="0x4E"/>
-			<control id="testcontrol4F" type="value" name="Control 0x4F" address="0x4F"/>
+			<control id="testcontrol40" type="value" name="Control 0x40" address="0x40" />
+			<control id="testcontrol41" type="value" name="Control 0x41" address="0x41" />
+			<control id="testcontrol42" type="value" name="Control 0x42" address="0x42" />
+			<control id="testcontrol43" type="value" name="Control 0x43" address="0x43" />
+			<control id="testcontrol44" type="value" name="Control 0x44" address="0x44" />
+			<control id="testcontrol45" type="value" name="Control 0x45" address="0x45" />
+			<control id="testcontrol46" type="value" name="Control 0x46" address="0x46" />
+			<control id="testcontrol47" type="value" name="Control 0x47" address="0x47" />
+			<control id="testcontrol48" type="value" name="Control 0x48" address="0x48" />
+			<control id="testcontrol49" type="value" name="Control 0x49" address="0x49" />
+			<control id="testcontrol4A" type="value" name="Control 0x4A" address="0x4A" />
+			<control id="testcontrol4B" type="value" name="Control 0x4B" address="0x4B" />
+			<control id="testcontrol4C" type="value" name="Control 0x4C" address="0x4C" />
+			<control id="testcontrol4D" type="value" name="Control 0x4D" address="0x4D" />
+			<control id="testcontrol4E" type="value" name="Control 0x4E" address="0x4E" />
+			<control id="testcontrol4F" type="value" name="Control 0x4F" address="0x4F" />
 		</subgroup>
 		<subgroup name="0x5X">
-			<control id="testcontrol50" type="value" name="Control 0x50" address="0x50"/>
-			<control id="testcontrol51" type="value" name="Control 0x51" address="0x51"/>
-			<control id="testcontrol52" type="value" name="Control 0x52" address="0x52"/>
-			<control id="testcontrol53" type="value" name="Control 0x53" address="0x53"/>
-			<control id="testcontrol54" type="value" name="Control 0x54" address="0x54"/>
-			<control id="testcontrol55" type="value" name="Control 0x55" address="0x55"/>
-			<control id="testcontrol56" type="value" name="Control 0x56" address="0x56"/>
-			<control id="testcontrol57" type="value" name="Control 0x57" address="0x57"/>
-			<control id="testcontrol58" type="value" name="Control 0x58" address="0x58"/>
-			<control id="testcontrol59" type="value" name="Control 0x59" address="0x59"/>
-			<control id="testcontrol5A" type="value" name="Control 0x5A" address="0x5A"/>
-			<control id="testcontrol5B" type="value" name="Control 0x5B" address="0x5B"/>
-			<control id="testcontrol5C" type="value" name="Control 0x5C" address="0x5C"/>
-			<control id="testcontrol5D" type="value" name="Control 0x5D" address="0x5D"/>
-			<control id="testcontrol5E" type="value" name="Control 0x5E" address="0x5E"/>
-			<control id="testcontrol5F" type="value" name="Control 0x5F" address="0x5F"/>
+			<control id="testcontrol50" type="value" name="Control 0x50" address="0x50" />
+			<control id="testcontrol51" type="value" name="Control 0x51" address="0x51" />
+			<control id="testcontrol52" type="value" name="Control 0x52" address="0x52" />
+			<control id="testcontrol53" type="value" name="Control 0x53" address="0x53" />
+			<control id="testcontrol54" type="value" name="Control 0x54" address="0x54" />
+			<control id="testcontrol55" type="value" name="Control 0x55" address="0x55" />
+			<control id="testcontrol56" type="value" name="Control 0x56" address="0x56" />
+			<control id="testcontrol57" type="value" name="Control 0x57" address="0x57" />
+			<control id="testcontrol58" type="value" name="Control 0x58" address="0x58" />
+			<control id="testcontrol59" type="value" name="Control 0x59" address="0x59" />
+			<control id="testcontrol5A" type="value" name="Control 0x5A" address="0x5A" />
+			<control id="testcontrol5B" type="value" name="Control 0x5B" address="0x5B" />
+			<control id="testcontrol5C" type="value" name="Control 0x5C" address="0x5C" />
+			<control id="testcontrol5D" type="value" name="Control 0x5D" address="0x5D" />
+			<control id="testcontrol5E" type="value" name="Control 0x5E" address="0x5E" />
+			<control id="testcontrol5F" type="value" name="Control 0x5F" address="0x5F" />
 		</subgroup>
 		<subgroup name="0x6X">
-			<control id="testcontrol60" type="value" name="Control 0x60" address="0x60"/>
-			<control id="testcontrol61" type="value" name="Control 0x61" address="0x61"/>
-			<control id="testcontrol62" type="value" name="Control 0x62" address="0x62"/>
-			<control id="testcontrol63" type="value" name="Control 0x63" address="0x63"/>
-			<control id="testcontrol64" type="value" name="Control 0x64" address="0x64"/>
-			<control id="testcontrol65" type="value" name="Control 0x65" address="0x65"/>
-			<control id="testcontrol66" type="value" name="Control 0x66" address="0x66"/>
-			<control id="testcontrol67" type="value" name="Control 0x67" address="0x67"/>
-			<control id="testcontrol68" type="value" name="Control 0x68" address="0x68"/>
-			<control id="testcontrol69" type="value" name="Control 0x69" address="0x69"/>
-			<control id="testcontrol6A" type="value" name="Control 0x6A" address="0x6A"/>
-			<control id="testcontrol6B" type="value" name="Control 0x6B" address="0x6B"/>
-			<control id="testcontrol6C" type="value" name="Control 0x6C" address="0x6C"/>
-			<control id="testcontrol6D" type="value" name="Control 0x6D" address="0x6D"/>
-			<control id="testcontrol6E" type="value" name="Control 0x6E" address="0x6E"/>
-			<control id="testcontrol6F" type="value" name="Control 0x6F" address="0x6F"/>
+			<control id="testcontrol60" type="value" name="Control 0x60" address="0x60" />
+			<control id="testcontrol61" type="value" name="Control 0x61" address="0x61" />
+			<control id="testcontrol62" type="value" name="Control 0x62" address="0x62" />
+			<control id="testcontrol63" type="value" name="Control 0x63" address="0x63" />
+			<control id="testcontrol64" type="value" name="Control 0x64" address="0x64" />
+			<control id="testcontrol65" type="value" name="Control 0x65" address="0x65" />
+			<control id="testcontrol66" type="value" name="Control 0x66" address="0x66" />
+			<control id="testcontrol67" type="value" name="Control 0x67" address="0x67" />
+			<control id="testcontrol68" type="value" name="Control 0x68" address="0x68" />
+			<control id="testcontrol69" type="value" name="Control 0x69" address="0x69" />
+			<control id="testcontrol6A" type="value" name="Control 0x6A" address="0x6A" />
+			<control id="testcontrol6B" type="value" name="Control 0x6B" address="0x6B" />
+			<control id="testcontrol6C" type="value" name="Control 0x6C" address="0x6C" />
+			<control id="testcontrol6D" type="value" name="Control 0x6D" address="0x6D" />
+			<control id="testcontrol6E" type="value" name="Control 0x6E" address="0x6E" />
+			<control id="testcontrol6F" type="value" name="Control 0x6F" address="0x6F" />
 		</subgroup>
 		<subgroup name="0x7X">
-			<control id="testcontrol70" type="value" name="Control 0x70" address="0x70"/>
-			<control id="testcontrol71" type="value" name="Control 0x71" address="0x71"/>
-			<control id="testcontrol72" type="value" name="Control 0x72" address="0x72"/>
-			<control id="testcontrol73" type="value" name="Control 0x73" address="0x73"/>
-			<control id="testcontrol74" type="value" name="Control 0x74" address="0x74"/>
-			<control id="testcontrol75" type="value" name="Control 0x75" address="0x75"/>
-			<control id="testcontrol76" type="value" name="Control 0x76" address="0x76"/>
-			<control id="testcontrol77" type="value" name="Control 0x77" address="0x77"/>
-			<control id="testcontrol78" type="value" name="Control 0x78" address="0x78"/>
-			<control id="testcontrol79" type="value" name="Control 0x79" address="0x79"/>
-			<control id="testcontrol7A" type="value" name="Control 0x7A" address="0x7A"/>
-			<control id="testcontrol7B" type="value" name="Control 0x7B" address="0x7B"/>
-			<control id="testcontrol7C" type="value" name="Control 0x7C" address="0x7C"/>
-			<control id="testcontrol7D" type="value" name="Control 0x7D" address="0x7D"/>
-			<control id="testcontrol7E" type="value" name="Control 0x7E" address="0x7E"/>
-			<control id="testcontrol7F" type="value" name="Control 0x7F" address="0x7F"/>
+			<control id="testcontrol70" type="value" name="Control 0x70" address="0x70" />
+			<control id="testcontrol71" type="value" name="Control 0x71" address="0x71" />
+			<control id="testcontrol72" type="value" name="Control 0x72" address="0x72" />
+			<control id="testcontrol73" type="value" name="Control 0x73" address="0x73" />
+			<control id="testcontrol74" type="value" name="Control 0x74" address="0x74" />
+			<control id="testcontrol75" type="value" name="Control 0x75" address="0x75" />
+			<control id="testcontrol76" type="value" name="Control 0x76" address="0x76" />
+			<control id="testcontrol77" type="value" name="Control 0x77" address="0x77" />
+			<control id="testcontrol78" type="value" name="Control 0x78" address="0x78" />
+			<control id="testcontrol79" type="value" name="Control 0x79" address="0x79" />
+			<control id="testcontrol7A" type="value" name="Control 0x7A" address="0x7A" />
+			<control id="testcontrol7B" type="value" name="Control 0x7B" address="0x7B" />
+			<control id="testcontrol7C" type="value" name="Control 0x7C" address="0x7C" />
+			<control id="testcontrol7D" type="value" name="Control 0x7D" address="0x7D" />
+			<control id="testcontrol7E" type="value" name="Control 0x7E" address="0x7E" />
+			<control id="testcontrol7F" type="value" name="Control 0x7F" address="0x7F" />
 		</subgroup>
 		<subgroup name="0x8X">
-			<control id="testcontrol80" type="value" name="Control 0x80" address="0x80"/>
-			<control id="testcontrol81" type="value" name="Control 0x81" address="0x81"/>
-			<control id="testcontrol82" type="value" name="Control 0x82" address="0x82"/>
-			<control id="testcontrol83" type="value" name="Control 0x83" address="0x83"/>
-			<control id="testcontrol84" type="value" name="Control 0x84" address="0x84"/>
-			<control id="testcontrol85" type="value" name="Control 0x85" address="0x85"/>
-			<control id="testcontrol86" type="value" name="Control 0x86" address="0x86"/>
-			<control id="testcontrol87" type="value" name="Control 0x87" address="0x87"/>
-			<control id="testcontrol88" type="value" name="Control 0x88" address="0x88"/>
-			<control id="testcontrol89" type="value" name="Control 0x89" address="0x89"/>
-			<control id="testcontrol8A" type="value" name="Control 0x8A" address="0x8A"/>
-			<control id="testcontrol8B" type="value" name="Control 0x8B" address="0x8B"/>
-			<control id="testcontrol8C" type="value" name="Control 0x8C" address="0x8C"/>
-			<control id="testcontrol8D" type="value" name="Control 0x8D" address="0x8D"/>
-			<control id="testcontrol8E" type="value" name="Control 0x8E" address="0x8E"/>
-			<control id="testcontrol8F" type="value" name="Control 0x8F" address="0x8F"/>
+			<control id="testcontrol80" type="value" name="Control 0x80" address="0x80" />
+			<control id="testcontrol81" type="value" name="Control 0x81" address="0x81" />
+			<control id="testcontrol82" type="value" name="Control 0x82" address="0x82" />
+			<control id="testcontrol83" type="value" name="Control 0x83" address="0x83" />
+			<control id="testcontrol84" type="value" name="Control 0x84" address="0x84" />
+			<control id="testcontrol85" type="value" name="Control 0x85" address="0x85" />
+			<control id="testcontrol86" type="value" name="Control 0x86" address="0x86" />
+			<control id="testcontrol87" type="value" name="Control 0x87" address="0x87" />
+			<control id="testcontrol88" type="value" name="Control 0x88" address="0x88" />
+			<control id="testcontrol89" type="value" name="Control 0x89" address="0x89" />
+			<control id="testcontrol8A" type="value" name="Control 0x8A" address="0x8A" />
+			<control id="testcontrol8B" type="value" name="Control 0x8B" address="0x8B" />
+			<control id="testcontrol8C" type="value" name="Control 0x8C" address="0x8C" />
+			<control id="testcontrol8D" type="value" name="Control 0x8D" address="0x8D" />
+			<control id="testcontrol8E" type="value" name="Control 0x8E" address="0x8E" />
+			<control id="testcontrol8F" type="value" name="Control 0x8F" address="0x8F" />
 		</subgroup>
 		<subgroup name="0x9X">
-			<control id="testcontrol90" type="value" name="Control 0x90" address="0x90"/>
-			<control id="testcontrol91" type="value" name="Control 0x91" address="0x91"/>
-			<control id="testcontrol92" type="value" name="Control 0x92" address="0x92"/>
-			<control id="testcontrol93" type="value" name="Control 0x93" address="0x93"/>
-			<control id="testcontrol94" type="value" name="Control 0x94" address="0x94"/>
-			<control id="testcontrol95" type="value" name="Control 0x95" address="0x95"/>
-			<control id="testcontrol96" type="value" name="Control 0x96" address="0x96"/>
-			<control id="testcontrol97" type="value" name="Control 0x97" address="0x97"/>
-			<control id="testcontrol98" type="value" name="Control 0x98" address="0x98"/>
-			<control id="testcontrol99" type="value" name="Control 0x99" address="0x99"/>
-			<control id="testcontrol9A" type="value" name="Control 0x9A" address="0x9A"/>
-			<control id="testcontrol9B" type="value" name="Control 0x9B" address="0x9B"/>
-			<control id="testcontrol9C" type="value" name="Control 0x9C" address="0x9C"/>
-			<control id="testcontrol9D" type="value" name="Control 0x9D" address="0x9D"/>
-			<control id="testcontrol9E" type="value" name="Control 0x9E" address="0x9E"/>
-			<control id="testcontrol9F" type="value" name="Control 0x9F" address="0x9F"/>
+			<control id="testcontrol90" type="value" name="Control 0x90" address="0x90" />
+			<control id="testcontrol91" type="value" name="Control 0x91" address="0x91" />
+			<control id="testcontrol92" type="value" name="Control 0x92" address="0x92" />
+			<control id="testcontrol93" type="value" name="Control 0x93" address="0x93" />
+			<control id="testcontrol94" type="value" name="Control 0x94" address="0x94" />
+			<control id="testcontrol95" type="value" name="Control 0x95" address="0x95" />
+			<control id="testcontrol96" type="value" name="Control 0x96" address="0x96" />
+			<control id="testcontrol97" type="value" name="Control 0x97" address="0x97" />
+			<control id="testcontrol98" type="value" name="Control 0x98" address="0x98" />
+			<control id="testcontrol99" type="value" name="Control 0x99" address="0x99" />
+			<control id="testcontrol9A" type="value" name="Control 0x9A" address="0x9A" />
+			<control id="testcontrol9B" type="value" name="Control 0x9B" address="0x9B" />
+			<control id="testcontrol9C" type="value" name="Control 0x9C" address="0x9C" />
+			<control id="testcontrol9D" type="value" name="Control 0x9D" address="0x9D" />
+			<control id="testcontrol9E" type="value" name="Control 0x9E" address="0x9E" />
+			<control id="testcontrol9F" type="value" name="Control 0x9F" address="0x9F" />
 		</subgroup>
 		<subgroup name="0xAX">
-			<control id="testcontrolA0" type="value" name="Control 0xA0" address="0xA0"/>
-			<control id="testcontrolA1" type="value" name="Control 0xA1" address="0xA1"/>
-			<control id="testcontrolA2" type="value" name="Control 0xA2" address="0xA2"/>
-			<control id="testcontrolA3" type="value" name="Control 0xA3" address="0xA3"/>
-			<control id="testcontrolA4" type="value" name="Control 0xA4" address="0xA4"/>
-			<control id="testcontrolA5" type="value" name="Control 0xA5" address="0xA5"/>
-			<control id="testcontrolA6" type="value" name="Control 0xA6" address="0xA6"/>
-			<control id="testcontrolA7" type="value" name="Control 0xA7" address="0xA7"/>
-			<control id="testcontrolA8" type="value" name="Control 0xA8" address="0xA8"/>
-			<control id="testcontrolA9" type="value" name="Control 0xA9" address="0xA9"/>
-			<control id="testcontrolAA" type="value" name="Control 0xAA" address="0xAA"/>
-			<control id="testcontrolAB" type="value" name="Control 0xAB" address="0xAB"/>
-			<control id="testcontrolAC" type="value" name="Control 0xAC" address="0xAC"/>
-			<control id="testcontrolAD" type="value" name="Control 0xAD" address="0xAD"/>
-			<control id="testcontrolAE" type="value" name="Control 0xAE" address="0xAE"/>
-			<control id="testcontrolAF" type="value" name="Control 0xAF" address="0xAF"/>
+			<control id="testcontrolA0" type="value" name="Control 0xA0" address="0xA0" />
+			<control id="testcontrolA1" type="value" name="Control 0xA1" address="0xA1" />
+			<control id="testcontrolA2" type="value" name="Control 0xA2" address="0xA2" />
+			<control id="testcontrolA3" type="value" name="Control 0xA3" address="0xA3" />
+			<control id="testcontrolA4" type="value" name="Control 0xA4" address="0xA4" />
+			<control id="testcontrolA5" type="value" name="Control 0xA5" address="0xA5" />
+			<control id="testcontrolA6" type="value" name="Control 0xA6" address="0xA6" />
+			<control id="testcontrolA7" type="value" name="Control 0xA7" address="0xA7" />
+			<control id="testcontrolA8" type="value" name="Control 0xA8" address="0xA8" />
+			<control id="testcontrolA9" type="value" name="Control 0xA9" address="0xA9" />
+			<control id="testcontrolAA" type="value" name="Control 0xAA" address="0xAA" />
+			<control id="testcontrolAB" type="value" name="Control 0xAB" address="0xAB" />
+			<control id="testcontrolAC" type="value" name="Control 0xAC" address="0xAC" />
+			<control id="testcontrolAD" type="value" name="Control 0xAD" address="0xAD" />
+			<control id="testcontrolAE" type="value" name="Control 0xAE" address="0xAE" />
+			<control id="testcontrolAF" type="value" name="Control 0xAF" address="0xAF" />
 		</subgroup>
 		<subgroup name="0xBX">
-			<control id="testcontrolB0" type="value" name="Control 0xB0" address="0xB0"/>
-			<control id="testcontrolB1" type="value" name="Control 0xB1" address="0xB1"/>
-			<control id="testcontrolB2" type="value" name="Control 0xB2" address="0xB2"/>
-			<control id="testcontrolB3" type="value" name="Control 0xB3" address="0xB3"/>
-			<control id="testcontrolB4" type="value" name="Control 0xB4" address="0xB4"/>
-			<control id="testcontrolB5" type="value" name="Control 0xB5" address="0xB5"/>
-			<control id="testcontrolB6" type="value" name="Control 0xB6" address="0xB6"/>
-			<control id="testcontrolB7" type="value" name="Control 0xB7" address="0xB7"/>
-			<control id="testcontrolB8" type="value" name="Control 0xB8" address="0xB8"/>
-			<control id="testcontrolB9" type="value" name="Control 0xB9" address="0xB9"/>
-			<control id="testcontrolBA" type="value" name="Control 0xBA" address="0xBA"/>
-			<control id="testcontrolBB" type="value" name="Control 0xBB" address="0xBB"/>
-			<control id="testcontrolBC" type="value" name="Control 0xBC" address="0xBC"/>
-			<control id="testcontrolBD" type="value" name="Control 0xBD" address="0xBD"/>
-			<control id="testcontrolBE" type="value" name="Control 0xBE" address="0xBE"/>
-			<control id="testcontrolBF" type="value" name="Control 0xBF" address="0xBF"/>
+			<control id="testcontrolB0" type="value" name="Control 0xB0" address="0xB0" />
+			<control id="testcontrolB1" type="value" name="Control 0xB1" address="0xB1" />
+			<control id="testcontrolB2" type="value" name="Control 0xB2" address="0xB2" />
+			<control id="testcontrolB3" type="value" name="Control 0xB3" address="0xB3" />
+			<control id="testcontrolB4" type="value" name="Control 0xB4" address="0xB4" />
+			<control id="testcontrolB5" type="value" name="Control 0xB5" address="0xB5" />
+			<control id="testcontrolB6" type="value" name="Control 0xB6" address="0xB6" />
+			<control id="testcontrolB7" type="value" name="Control 0xB7" address="0xB7" />
+			<control id="testcontrolB8" type="value" name="Control 0xB8" address="0xB8" />
+			<control id="testcontrolB9" type="value" name="Control 0xB9" address="0xB9" />
+			<control id="testcontrolBA" type="value" name="Control 0xBA" address="0xBA" />
+			<control id="testcontrolBB" type="value" name="Control 0xBB" address="0xBB" />
+			<control id="testcontrolBC" type="value" name="Control 0xBC" address="0xBC" />
+			<control id="testcontrolBD" type="value" name="Control 0xBD" address="0xBD" />
+			<control id="testcontrolBE" type="value" name="Control 0xBE" address="0xBE" />
+			<control id="testcontrolBF" type="value" name="Control 0xBF" address="0xBF" />
 		</subgroup>
 		<subgroup name="0xCX">
-			<control id="testcontrolC0" type="value" name="Control 0xC0" address="0xC0"/>
-			<control id="testcontrolC1" type="value" name="Control 0xC1" address="0xC1"/>
-			<control id="testcontrolC2" type="value" name="Control 0xC2" address="0xC2"/>
-			<control id="testcontrolC3" type="value" name="Control 0xC3" address="0xC3"/>
-			<control id="testcontrolC4" type="value" name="Control 0xC4" address="0xC4"/>
-			<control id="testcontrolC5" type="value" name="Control 0xC5" address="0xC5"/>
-			<control id="testcontrolC6" type="value" name="Control 0xC6" address="0xC6"/>
-			<control id="testcontrolC7" type="value" name="Control 0xC7" address="0xC7"/>
-			<control id="testcontrolC8" type="value" name="Control 0xC8" address="0xC8"/>
-			<control id="testcontrolC9" type="value" name="Control 0xC9" address="0xC9"/>
-			<control id="testcontrolCA" type="value" name="Control 0xCA" address="0xCA"/>
-			<control id="testcontrolCB" type="value" name="Control 0xCB" address="0xCB"/>
-			<control id="testcontrolCC" type="value" name="Control 0xCC" address="0xCC"/>
-			<control id="testcontrolCD" type="value" name="Control 0xCD" address="0xCD"/>
-			<control id="testcontrolCE" type="value" name="Control 0xCE" address="0xCE"/>
-			<control id="testcontrolCF" type="value" name="Control 0xCF" address="0xCF"/>
+			<control id="testcontrolC0" type="value" name="Control 0xC0" address="0xC0" />
+			<control id="testcontrolC1" type="value" name="Control 0xC1" address="0xC1" />
+			<control id="testcontrolC2" type="value" name="Control 0xC2" address="0xC2" />
+			<control id="testcontrolC3" type="value" name="Control 0xC3" address="0xC3" />
+			<control id="testcontrolC4" type="value" name="Control 0xC4" address="0xC4" />
+			<control id="testcontrolC5" type="value" name="Control 0xC5" address="0xC5" />
+			<control id="testcontrolC6" type="value" name="Control 0xC6" address="0xC6" />
+			<control id="testcontrolC7" type="value" name="Control 0xC7" address="0xC7" />
+			<control id="testcontrolC8" type="value" name="Control 0xC8" address="0xC8" />
+			<control id="testcontrolC9" type="value" name="Control 0xC9" address="0xC9" />
+			<control id="testcontrolCA" type="value" name="Control 0xCA" address="0xCA" />
+			<control id="testcontrolCB" type="value" name="Control 0xCB" address="0xCB" />
+			<control id="testcontrolCC" type="value" name="Control 0xCC" address="0xCC" />
+			<control id="testcontrolCD" type="value" name="Control 0xCD" address="0xCD" />
+			<control id="testcontrolCE" type="value" name="Control 0xCE" address="0xCE" />
+			<control id="testcontrolCF" type="value" name="Control 0xCF" address="0xCF" />
 		</subgroup>
 		<subgroup name="0xDX">
-			<control id="testcontrolD0" type="value" name="Control 0xD0" address="0xD0"/>
-			<control id="testcontrolD1" type="value" name="Control 0xD1" address="0xD1"/>
-			<control id="testcontrolD2" type="value" name="Control 0xD2" address="0xD2"/>
-			<control id="testcontrolD3" type="value" name="Control 0xD3" address="0xD3"/>
-			<control id="testcontrolD4" type="value" name="Control 0xD4" address="0xD4"/>
-			<control id="testcontrolD5" type="value" name="Control 0xD5" address="0xD5"/>
-			<control id="testcontrolD6" type="value" name="Control 0xD6" address="0xD6"/>
-			<control id="testcontrolD7" type="value" name="Control 0xD7" address="0xD7"/>
-			<control id="testcontrolD8" type="value" name="Control 0xD8" address="0xD8"/>
-			<control id="testcontrolD9" type="value" name="Control 0xD9" address="0xD9"/>
-			<control id="testcontrolDA" type="value" name="Control 0xDA" address="0xDA"/>
-			<control id="testcontrolDB" type="value" name="Control 0xDB" address="0xDB"/>
-			<control id="testcontrolDC" type="value" name="Control 0xDC" address="0xDC"/>
-			<control id="testcontrolDD" type="value" name="Control 0xDD" address="0xDD"/>
-			<control id="testcontrolDE" type="value" name="Control 0xDE" address="0xDE"/>
-			<control id="testcontrolDF" type="value" name="Control 0xDF" address="0xDF"/>
+			<control id="testcontrolD0" type="value" name="Control 0xD0" address="0xD0" />
+			<control id="testcontrolD1" type="value" name="Control 0xD1" address="0xD1" />
+			<control id="testcontrolD2" type="value" name="Control 0xD2" address="0xD2" />
+			<control id="testcontrolD3" type="value" name="Control 0xD3" address="0xD3" />
+			<control id="testcontrolD4" type="value" name="Control 0xD4" address="0xD4" />
+			<control id="testcontrolD5" type="value" name="Control 0xD5" address="0xD5" />
+			<control id="testcontrolD6" type="value" name="Control 0xD6" address="0xD6" />
+			<control id="testcontrolD7" type="value" name="Control 0xD7" address="0xD7" />
+			<control id="testcontrolD8" type="value" name="Control 0xD8" address="0xD8" />
+			<control id="testcontrolD9" type="value" name="Control 0xD9" address="0xD9" />
+			<control id="testcontrolDA" type="value" name="Control 0xDA" address="0xDA" />
+			<control id="testcontrolDB" type="value" name="Control 0xDB" address="0xDB" />
+			<control id="testcontrolDC" type="value" name="Control 0xDC" address="0xDC" />
+			<control id="testcontrolDD" type="value" name="Control 0xDD" address="0xDD" />
+			<control id="testcontrolDE" type="value" name="Control 0xDE" address="0xDE" />
+			<control id="testcontrolDF" type="value" name="Control 0xDF" address="0xDF" />
 		</subgroup>
 		<subgroup name="0xEX">
-			<control id="testcontrolE0" type="value" name="Control 0xE0" address="0xE0"/>
-			<control id="testcontrolE1" type="value" name="Control 0xE1" address="0xE1"/>
-			<control id="testcontrolE2" type="value" name="Control 0xE2" address="0xE2"/>
-			<control id="testcontrolE3" type="value" name="Control 0xE3" address="0xE3"/>
-			<control id="testcontrolE4" type="value" name="Control 0xE4" address="0xE4"/>
-			<control id="testcontrolE5" type="value" name="Control 0xE5" address="0xE5"/>
-			<control id="testcontrolE6" type="value" name="Control 0xE6" address="0xE6"/>
-			<control id="testcontrolE7" type="value" name="Control 0xE7" address="0xE7"/>
-			<control id="testcontrolE8" type="value" name="Control 0xE8" address="0xE8"/>
-			<control id="testcontrolE9" type="value" name="Control 0xE9" address="0xE9"/>
-			<control id="testcontrolEA" type="value" name="Control 0xEA" address="0xEA"/>
-			<control id="testcontrolEB" type="value" name="Control 0xEB" address="0xEB"/>
-			<control id="testcontrolEC" type="value" name="Control 0xEC" address="0xEC"/>
-			<control id="testcontrolED" type="value" name="Control 0xED" address="0xED"/>
-			<control id="testcontrolEE" type="value" name="Control 0xEE" address="0xEE"/>
-			<control id="testcontrolEF" type="value" name="Control 0xEF" address="0xEF"/>
+			<control id="testcontrolE0" type="value" name="Control 0xE0" address="0xE0" />
+			<control id="testcontrolE1" type="value" name="Control 0xE1" address="0xE1" />
+			<control id="testcontrolE2" type="value" name="Control 0xE2" address="0xE2" />
+			<control id="testcontrolE3" type="value" name="Control 0xE3" address="0xE3" />
+			<control id="testcontrolE4" type="value" name="Control 0xE4" address="0xE4" />
+			<control id="testcontrolE5" type="value" name="Control 0xE5" address="0xE5" />
+			<control id="testcontrolE6" type="value" name="Control 0xE6" address="0xE6" />
+			<control id="testcontrolE7" type="value" name="Control 0xE7" address="0xE7" />
+			<control id="testcontrolE8" type="value" name="Control 0xE8" address="0xE8" />
+			<control id="testcontrolE9" type="value" name="Control 0xE9" address="0xE9" />
+			<control id="testcontrolEA" type="value" name="Control 0xEA" address="0xEA" />
+			<control id="testcontrolEB" type="value" name="Control 0xEB" address="0xEB" />
+			<control id="testcontrolEC" type="value" name="Control 0xEC" address="0xEC" />
+			<control id="testcontrolED" type="value" name="Control 0xED" address="0xED" />
+			<control id="testcontrolEE" type="value" name="Control 0xEE" address="0xEE" />
+			<control id="testcontrolEF" type="value" name="Control 0xEF" address="0xEF" />
 		</subgroup>
 		<subgroup name="0xFX">
-			<control id="testcontrolF0" type="value" name="Control 0xF0" address="0xF0"/>
-			<control id="testcontrolF1" type="value" name="Control 0xF1" address="0xF1"/>
-			<control id="testcontrolF2" type="value" name="Control 0xF2" address="0xF2"/>
-			<control id="testcontrolF3" type="value" name="Control 0xF3" address="0xF3"/>
-			<control id="testcontrolF4" type="value" name="Control 0xF4" address="0xF4"/>
-			<control id="testcontrolF5" type="value" name="Control 0xF5" address="0xF5"/>
-			<control id="testcontrolF6" type="value" name="Control 0xF6" address="0xF6"/>
-			<control id="testcontrolF7" type="value" name="Control 0xF7" address="0xF7"/>
-			<control id="testcontrolF8" type="value" name="Control 0xF8" address="0xF8"/>
-			<control id="testcontrolF9" type="value" name="Control 0xF9" address="0xF9"/>
-			<control id="testcontrolFA" type="value" name="Control 0xFA" address="0xFA"/>
-			<control id="testcontrolFB" type="value" name="Control 0xFB" address="0xFB"/>
-			<control id="testcontrolFC" type="value" name="Control 0xFC" address="0xFC"/>
-			<control id="testcontrolFD" type="value" name="Control 0xFD" address="0xFD"/>
-			<control id="testcontrolFE" type="value" name="Control 0xFE" address="0xFE"/>
-			<control id="testcontrolFF" type="value" name="Control 0xFF" address="0xFF"/>
+			<control id="testcontrolF0" type="value" name="Control 0xF0" address="0xF0" />
+			<control id="testcontrolF1" type="value" name="Control 0xF1" address="0xF1" />
+			<control id="testcontrolF2" type="value" name="Control 0xF2" address="0xF2" />
+			<control id="testcontrolF3" type="value" name="Control 0xF3" address="0xF3" />
+			<control id="testcontrolF4" type="value" name="Control 0xF4" address="0xF4" />
+			<control id="testcontrolF5" type="value" name="Control 0xF5" address="0xF5" />
+			<control id="testcontrolF6" type="value" name="Control 0xF6" address="0xF6" />
+			<control id="testcontrolF7" type="value" name="Control 0xF7" address="0xF7" />
+			<control id="testcontrolF8" type="value" name="Control 0xF8" address="0xF8" />
+			<control id="testcontrolF9" type="value" name="Control 0xF9" address="0xF9" />
+			<control id="testcontrolFA" type="value" name="Control 0xFA" address="0xFA" />
+			<control id="testcontrolFB" type="value" name="Control 0xFB" address="0xFB" />
+			<control id="testcontrolFC" type="value" name="Control 0xFC" address="0xFC" />
+			<control id="testcontrolFD" type="value" name="Control 0xFD" address="0xFD" />
+			<control id="testcontrolFE" type="value" name="Control 0xFE" address="0xFE" />
+			<control id="testcontrolFF" type="value" name="Control 0xFF" address="0xFF" />
 		</subgroup>
 	</group>
 </options>
